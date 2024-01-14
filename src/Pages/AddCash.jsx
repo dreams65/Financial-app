@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 function AddCash() {
 
-  const baseUrl = "https://finance.shtefan.pl/api/";
+  const baseUrl = "";
 
   const [formValues, setFormValues] = useState({
     title: "",
