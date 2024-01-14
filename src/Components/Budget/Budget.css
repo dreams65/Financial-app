@@ -1,0 +1,40 @@
+.budget {
+    background-color: var(--darkGray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 39px;
+    padding: 33px 50px;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.budget__img {
+    width: 60px;
+    height: 60px;
+}
+
+.budget__value {
+    font-size: 32px;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .budget {
+        padding: 10px 15px;
+        gap: 5px;
+        border-radius: 12px;
+    }
+
+    .budget__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .budget__value {
+        font-size: 1rem;
+        gap: 5px;
+    }
+}

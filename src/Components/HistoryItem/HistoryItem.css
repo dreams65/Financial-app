@@ -1,0 +1,44 @@
+.history__item {
+    background-color: var(--darkGray);
+    width: 887px;
+    padding: 27px 33px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.history__item > span {
+    width: 33.33%;
+}
+
+.history__item > span:nth-child(2) {
+    text-align: center;
+}
+
+.history__item > span:last-child {
+    text-align: right;
+}
+
+.history__item:first-child {
+    margin-top: 40px;
+}
+
+.history__item {
+    margin-top: 16px;
+}
+
+.history__item_value[data-color="green"] {
+    color: #09FF4E;
+}
+
+.history__item_value[data-color="red"] {
+    color: #FF1C1C;
+}
+
+@media screen and (max-width: 1024px) {
+    .history__item {
+        width: -webkit-fill-available;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }     
+}

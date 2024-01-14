@@ -1,0 +1,50 @@
+.panel {
+    max-width: 320px;
+    height: calc(100vh - 72px);
+    background-color: var(--gray);
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.panel__btns {
+    display: flex;
+    gap: 20px;
+}
+
+.panel__link {
+    background-color: var(--darkGray);
+    color: var(--fontColor);
+    cursor: pointer;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.panel__link:active {
+    background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: -webkit-fill-available;
+        height: auto;
+        flex-direction: row;
+        padding: 10px 15px;
+        gap: 20px;
+    }
+
+    .panel__link {
+        text-align: center;
+    }
+
+    .panel__btns {
+        gap: 10px;
+    }
+}
