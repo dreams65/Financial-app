@@ -55,13 +55,13 @@ function GetCash() {
         <Panel />
         <div className="form-wrapper">
           <form className="form" onSubmit={handleSubmit}>
-            <span>Я хочу взяти кошти</span>
+            <span>I want to take funds</span>
             <input
               className="form__input"
               id="title"
               name="title"
               type="text"
-              placeholder="Введiть назву"
+              placeholder="Enter the title"
               onChange={handleChange}
               value={formValues.title}
               required
@@ -72,7 +72,7 @@ function GetCash() {
               id="amount"
               name="amount"
               type="number"
-              placeholder="Введiть сумму"
+              placeholder="Enter the amount"
               onChange={handleChange}
               value={formValues.amount}
               required
